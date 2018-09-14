@@ -1,0 +1,23 @@
+.selectAr_1{
+	float:left;width:17px;height:19px;background:url(../images/ar_1.GIF) no-repeat;
+}
+.selectAr_2{
+	float:left;width:17px;height:19px;background:url(../images/ar_2.GIF) no-repeat;
+}
+.selectAr_3{
+	float:left;width:17px;height:19px;background:url(../images/ar_3.GIF) no-repeat;
+}
+.selectItem_1{
+	width:99%;height:22px;cursor:default;
+	background-color:#FFFFFF;
+	color:#000000;
+	overflow:hidden;
+	border:0px;
+}
+.selectItem_2{
+	width:99%;height:22px;cursor:default;
+	background-color:#316AC5;
+	color:#FFFFFF;
+	overflow:hidden;
+	border:1px dotted #000000;
+}

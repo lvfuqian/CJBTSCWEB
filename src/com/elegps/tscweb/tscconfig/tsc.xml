@@ -1,0 +1,51 @@
+<?xml  version="1.0" encoding="GB2312" ?>
+<tsc-config>
+	<!-- 数据库类型：oracle或mysql -->
+	<db>oracle</db><!-- 数据库类型 -->
+	<!-- tsc-pttType --> <!-- 系统通话模式设置 -->
+	<tsc-grpBackout>1</tsc-grpBackout><!-- 0为通话结束即拆除通话群组，1为手动拆除通话群组 -->
+	<isResCall>0</isResCall><!-- 是否通知调度终端复台，0为通知，1为不通知 -->
+	<!-- /tsc-pttType -->
+
+	<!-- tsc-port --> <!-- 端口设置 -->
+	<tcsp-port>7000</tcsp-port> <!-- tcsp端口 -->
+	<gps-port>12041</gps-port> <!-- gps端口 -->
+	<!-- /tsc-port -->
+
+	<!--threadTime --> <!-- 线程时间设置 -->
+	<normaltimecount>120000</normaltimecount> <!-- 正常终端发送心跳时间间隔 -->
+	<sleeptimecount>30000</sleeptimecount> <!-- 休眠终端发送心跳时间间隔 -->
+	<resptime>300000</resptime>  <!-- 发送给终端后的响应时间 -->
+	<sleeptime>5000</sleeptime> <!-- 检测发送HB线程的休眠时间 -->
+	<mtGpsSenderSleep>5000</mtGpsSenderSleep> <!-- mtGpsSender(下行gps数据)休眠时间 -->
+	<mtGpsQueueReadCount>100</mtGpsQueueReadCount> <!-- 设置每次读取下行队列里面的个数 -->
+	<moGpsSenderSleep>10000</moGpsSenderSleep> <!-- moGpsSender(上行gps数据)休眠时间 -->
+	<moGpsQueueReadCount>100</moGpsQueueReadCount> <!-- 设置每次读取上行队列里面的个数 -->
+	<tscXmlLoadTime>5000</tscXmlLoadTime> <!-- 设置定时加载tsc.xml文件 -->
+	<voiceSenderSleep>100</voiceSenderSleep> <!-- VoiceSender休眠时间 -->
+	<voiceSenderReadCount>3</voiceSenderReadCount> <!-- 每次读取语音队列里面的个数 -->
+	<voiceSenderwaitTime>10000</voiceSenderwaitTime> <!-- 主叫在这个时间内不发送语音就表示挂断通话 -->
+	<checkCommuniteMaxTime>10000</checkCommuniteMaxTime><!-- 主叫允许通话的最长时间 -->
+	<checkTimeOutSleepTime>1000</checkTimeOutSleepTime><!-- 检测通话超时线程的休眠时间 -->
+	<!-- /threadTime -->
+
+	<!-- log-permission --> <!-- 日志权限设置，1为打印，0或者其他参数为不打印(moGps中2为打印，0为不打印) -->
+	<HB>0</HB> <!-- 心跳打印日志控制 -->
+	<CONN>0</CONN> <!-- conn打印日志控制 -->
+	<MTGPS>0</MTGPS><!-- MTGPS -->
+	<MOGPS>0</MOGPS><!-- MOGPS -->
+	<!-- /log-permission -->
+
+	<!-- other -->
+	<loginRootType>0</loginRootType> <!-- 登录上线规则：0为终端只需发CONN，TSC验证成功以后即为登录成功。1为终端发了CONN以后，再发QUERY查询成功以后才算登录成功 -->
+	<!-- /other -->
+
+	<!-- log-path --> <!-- 日志文件路径设置 -->
+	<excep-log>/data/TSC/logs/error.log</excep-log><!-- 日志文件路径设置 -->
+	<!-- /log-path -->
+
+	<!-- idConfig -->
+	<prifix-id>860533000</prifix-id><!-- ID前缀 -->
+	<!-- /idConfig -->
+
+</tsc-config>

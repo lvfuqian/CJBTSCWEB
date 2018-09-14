@@ -1,0 +1,100 @@
+﻿/*
+    公用样式
+*/
+* { margin: 0; padding: 0; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style: normal;
+}
+
+html,body{
+    height: 100%;
+    min-height: 458px;
+}
+body{
+    background: #ebebeb;
+    background-size: 100% 100%;
+    font-size: 65%;
+    font-family: '微软雅黑';
+}
+
+
+
+#adWrap{
+	overflow: hidden;
+}
+.i_top {
+    position: relative;
+    margin-top:50px;
+}
+.i_top ul{
+	overflow: hidden;
+	width: 400%;
+}
+.i_top li{
+	float: left;
+	width: 25%;
+	position:relative;
+}
+.i_top img{
+	display: block;
+	width: 100%;
+}
+
+.ad_btn_wrap{
+	position: absolute;
+	top: 90%;
+	width: 100%;
+}
+.ad_btn_wrap a{
+	display: block;
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background:rgba(255, 255, 255, 0.8);
+}
+.ad_btn_wrap a:nth-child(1){
+	background: #ff7b23;
+	margin-left: 45%;
+}
+#out {
+    overflow: hidden;
+    width: 100%;
+}
+
+#in {
+    overflow: hidden;
+}
+
+    #in img {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    
+.article{
+
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

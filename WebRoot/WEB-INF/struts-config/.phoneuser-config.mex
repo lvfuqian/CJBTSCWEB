@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/puser.do" location="950,150" dimension="319,104" />
+  <StrutsActivity path="/jsp/puser/listphoneuser.jsp" location="950,350" dimension="195,53" />
+  <StrutsActivity path="/jsp/puser/updatephoneuser.jsp" location="650,450" dimension="220,53" />
+  <StrutsActivity path="/jsp/puser/addphoneuser.jsp" location="50,450" dimension="202,53" />
+  <StrutsActivity path="/jsp/ddb/ddbaddinfo.jsp" location="0,294" dimension="177,53" />
+  <StrutsActivity path="/jsp/ddb/ddblistinfo.jsp" location="277,294" dimension="170,53" />
+  <StrutsActivity path="/jsp/ddb/ddbupdateinfo.jsp" location="547,294" dimension="195,53" />
+  <StrutsActivity path="/jsp/puser/updateinfo.jsp" location="350,450" dimension="180,53" />
+  <StrutsTransition id="/puser.do,spu_update_success,/puser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1079,150" />
+      <AbsolutePoint location="1079,0" />
+      <AbsolutePoint location="1434,0" />
+      <AbsolutePoint location="1434,232" />
+      <AbsolutePoint location="1269,232" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,spu_delete_success,/puser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1109,150" />
+      <AbsolutePoint location="1109,75" />
+      <AbsolutePoint location="1344,75" />
+      <AbsolutePoint location="1344,202" />
+      <AbsolutePoint location="1269,202" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,to_add_success,/jsp/puser/addphoneuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,202" />
+      <AbsolutePoint location="192,202" />
+      <AbsolutePoint location="192,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,spu_update_sessuce,/puser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1109,254" />
+      <AbsolutePoint location="1109,309" />
+      <AbsolutePoint location="1374,309" />
+      <AbsolutePoint location="1374,232" />
+      <AbsolutePoint location="1269,232" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,spu_success,/jsp/puser/listphoneuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1047,254" />
+      <AbsolutePoint location="1047,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,spu_add_sessuce,/puser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1139,150" />
+      <AbsolutePoint location="1139,105" />
+      <AbsolutePoint location="1284,105" />
+      <AbsolutePoint location="1284,172" />
+      <AbsolutePoint location="1269,172" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/puser.do,to_update_success,/jsp/puser/updatephoneuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,232" />
+      <AbsolutePoint location="760,232" />
+      <AbsolutePoint location="760,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

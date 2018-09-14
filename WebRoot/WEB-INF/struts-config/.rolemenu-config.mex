@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/rolemenu.do" location="105,0" dimension="322,84" />
+  <StrutsActivity path="/jsp/rolemenu/rolemuaddinfo.jsp" location="180,210" dimension="226,48" />
+  <StrutsActivity path="/jsp/rolemenu/rolemulistinfo.jsp" location="450,180" dimension="232,48" />
+  <StrutsActivity path="/jsp/rolemenu/rolemuaddplinfo.jsp" location="950,50" dimension="238,48" />
+  <StrutsTransition id="/rolemenu.do,success,/jsp/rolemenu/rolemulistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="427,65" />
+      <AbsolutePoint location="566,65" />
+      <AbsolutePoint location="566,180" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rolemenu.do,rolemenuaddjsp,/jsp/rolemenu/rolemuaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="266,84" />
+      <AbsolutePoint location="266,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rolemenu.do,rolemenuaddplmenujsp,/jsp/rolemenu/rolemuaddplinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="427,35" />
+      <AbsolutePoint location="1069,35" />
+      <AbsolutePoint location="1069,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rolemenu.do,showrolemenulist,/rolemenu.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="266,0" />
+      <AbsolutePoint location="266,-75" />
+      <AbsolutePoint location="755,-75" />
+      <AbsolutePoint location="755,5" />
+      <AbsolutePoint location="427,5" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

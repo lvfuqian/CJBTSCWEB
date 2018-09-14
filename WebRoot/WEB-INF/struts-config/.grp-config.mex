@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/grp.do" location="90,240" dimension="226,84" />
+  <StrutsActivity path="/jsp/grp/kfgrplistinfo.jsp" location="650,150" dimension="196,48" />
+  <StrutsActivity path="/jsp/grp/grpmody.jsp" location="315,345" dimension="160,48" />
+  <StrutsActivity path="/jsp/grp/basegrpshow.jsp" location="950,150" dimension="184,53" />
+  <StrutsActivity path="/jsp/grp/grplistinfo.jsp" location="255,45" dimension="184,48" />
+  <StrutsActivity path="/jsp/grp/grpaddinfo.jsp" location="420,105" dimension="178,48" />
+  <StrutsActivity path="/jsp/grp/grpxx.jsp" location="75,45" dimension="148,48" />
+  <StrutsActivity path="/jsp/grp/basegrpaddinfo.jsp" location="650,250" dimension="199,53" />
+  <StrutsActivity path="/jsp/grp/basegrpupdate.jsp" />
+  <StrutsTransition id="/grp.do,basesucces,/grp.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,282" />
+      <AbsolutePoint location="48,282" />
+      <AbsolutePoint location="48,366" />
+      <AbsolutePoint location="100,366" />
+      <AbsolutePoint location="100,324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,baseupdatejsp,/jsp/grp/basegrpupdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="203,282" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,toaddjsp,/jsp/grp/grpaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="316,282" />
+      <AbsolutePoint location="509,282" />
+      <AbsolutePoint location="509,153" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/grp/grpaddinfo.jsp,null,/grp.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,129" />
+      <AbsolutePoint location="173,129" />
+      <AbsolutePoint location="173,240" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,kfshowgrplist,/grp.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="113,240" />
+      <AbsolutePoint location="113,198" />
+      <AbsolutePoint location="0,198" />
+      <AbsolutePoint location="0,468" />
+      <AbsolutePoint location="755,468" />
+      <AbsolutePoint location="755,312" />
+      <AbsolutePoint location="316,312" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,basesucces,/jsp/grp/basegrpshow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="173,324" />
+      <AbsolutePoint location="173,558" />
+      <AbsolutePoint location="1042,558" />
+      <AbsolutePoint location="1042,203" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,succes,/jsp/grp/grplistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,240" />
+      <AbsolutePoint location="270,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,baseaddjsp,/jsp/grp/basegrpaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="233,324" />
+      <AbsolutePoint location="233,648" />
+      <AbsolutePoint location="725,648" />
+      <AbsolutePoint location="725,303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,baseaddjsp,/jsp/grp/grpaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="233,324" />
+      <AbsolutePoint location="233,648" />
+      <AbsolutePoint location="539,648" />
+      <AbsolutePoint location="539,153" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,kfsucces,/jsp/grp/kfgrplistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="203,240" />
+      <AbsolutePoint location="203,168" />
+      <AbsolutePoint location="650,168" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,basesearche,/jsp/grp/basegrpshow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="238,240" />
+      <AbsolutePoint location="238,223" />
+      <AbsolutePoint location="1042,223" />
+      <AbsolutePoint location="1042,203" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,grpmdify,/jsp/grp/grpmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="203,324" />
+      <AbsolutePoint location="203,369" />
+      <AbsolutePoint location="315,369" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,xiangxi,/jsp/grp/grpxx.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="143,240" />
+      <AbsolutePoint location="143,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,deletebasesucces,/grp.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,282" />
+      <AbsolutePoint location="48,282" />
+      <AbsolutePoint location="48,366" />
+      <AbsolutePoint location="100,366" />
+      <AbsolutePoint location="100,324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grp.do,showgrplist,/grp.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="220,240" />
+      <AbsolutePoint location="220,198" />
+      <AbsolutePoint location="435,198" />
+      <AbsolutePoint location="435,252" />
+      <AbsolutePoint location="316,252" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

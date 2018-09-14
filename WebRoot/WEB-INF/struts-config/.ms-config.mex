@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/ms.do" location="120,180" dimension="286,84" />
+  <StrutsActivity path="/mspladdjsp.do" location="945,330" dimension="112,60" />
+  <StrutsActivity path="/jsp/ms/kfmslistinfo.jsp" location="950,150" dimension="184,48" />
+  <StrutsActivity path="/jsp/ms/mspladdinfo.jsp" location="540,345" dimension="178,48" />
+  <StrutsActivity path="/jsp/ms/msaddinfo.jsp" location="50,350" dimension="166,48" />
+  <StrutsActivity path="/jsp/ms/msmody.jsp" location="950,50" dimension="148,48" />
+  <StrutsActivity path="/jsp/ms/msmodyext.jsp" location="50,450" dimension="168,53" />
+  <StrutsActivity path="/jsp/ms/mslistinfo.jsp" location="585,165" dimension="172,48" />
+  <StrutsActivity path="/jsp/ms/msxx.jsp" location="650,50" dimension="136,48" />
+  <StrutsActivity path="/jsp/ddb/ddblistinfo.jsp" location="950,450" dimension="170,53" />
+  <StrutsTransition id="/ms.do,succes,/jsp/ms/mslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="406,198" />
+      <AbsolutePoint location="585,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,showmslist,/ms.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="233,180" />
+      <AbsolutePoint location="233,-25" />
+      <AbsolutePoint location="481,-25" />
+      <AbsolutePoint location="481,228" />
+      <AbsolutePoint location="406,228" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,xiangxi,/jsp/ms/msxx.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="263,180" />
+      <AbsolutePoint location="263,74" />
+      <AbsolutePoint location="650,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mspladdjsp.do,null,/jsp/ms/mspladdinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="945,360" />
+      <AbsolutePoint location="718,360" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,ddb_search_sessuce,/jsp/ddb/ddblistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="631,476" />
+      <AbsolutePoint location="950,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/ddb/ddblistinfo.jsp,null,/ddb.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1035,503" />
+      <AbsolutePoint location="1035,518" />
+      <AbsolutePoint location="631,518" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,getmsext,/jsp/ms/msmodyext.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="263,222" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,mspladdjsp,/jsp/ms/mspladdinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="263,264" />
+      <AbsolutePoint location="263,369" />
+      <AbsolutePoint location="540,369" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,msmodify,/jsp/ms/msmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="406,258" />
+      <AbsolutePoint location="861,258" />
+      <AbsolutePoint location="861,74" />
+      <AbsolutePoint location="950,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,kfsucces,/jsp/ms/kfmslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="293,180" />
+      <AbsolutePoint location="293,113" />
+      <AbsolutePoint location="1042,113" />
+      <AbsolutePoint location="1042,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,msaddjsp,/jsp/ms/msaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="201,264" />
+      <AbsolutePoint location="201,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ms.do,kfshowmslist,/ms.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="263,222" />
+      <AbsolutePoint location="263,165" />
+      <AbsolutePoint location="105,165" />
+      <AbsolutePoint location="105,222" />
+      <AbsolutePoint location="263,222" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

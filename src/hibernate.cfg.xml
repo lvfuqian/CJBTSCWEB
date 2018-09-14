@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!--<property name="connection.url">jdbc:mysql://47.89.48.61:3306/TSC?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<!--<property name="connection.url">jdbc:mysql://127.0.0.1:3306/cjbtsc?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<!--<property name="connection.url">jdbc:mysql://120.25.166.17:3306/TSCCJB?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<property name="connection.url">jdbc:mysql://120.79.196.148:3306/CJBTSC?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>
+		<!--127.0.0.1:3306/tsc wanglei////120.25.125.217:3306/TSC  poctalkPoctalk@020
+		|||||203.88.213.159:3306/TSCTEST  bk159@GZ   118.244.236.92:4000/TSC  bj@010<property name="connection.url">jdbc:mysql://203.88.213.159:3306/TSC?useUnicode=true&amp;characterEncoding=UTF-8</property>-->
+		<!-- <property name="connection.username">root</property>
+		<property name="connection.password">bj@010</property> -->
+		<!--<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>-->
+		<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		<!-- <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+		<property name="dialect">com.elegps.tscweb.comm.MySQLDialect</property>
+		<mapping resource="hbm/TbMsInfo.hbm.xml" />
+		<mapping resource="hbm/TbGrpInfo.hbm.xml" />
+		<mapping resource="hbm/TbGrpMsListInfo.hbm.xml" />
+		<mapping resource="hbm/TbGpsInfo.hbm.xml" />
+		<mapping resource="hbm/TbGpsMsListInfo.hbm.xml" />
+		<mapping resource="hbm/TbMenuInfo.hbm.xml" />
+		<mapping resource="hbm/TbRoleInfo.hbm.xml" />
+		<mapping resource="hbm/TbRoleMenuInfo.hbm.xml" />
+		<mapping resource="hbm/TbUserInfo.hbm.xml" />
+		<mapping resource="hbm/TbRoleUserInfo.hbm.xml" />
+		<mapping resource="hbm/TbAgentInfo.hbm.xml" />
+		<mapping resource="hbm/TbEnterpriseInfo.hbm.xml" />
+		<mapping resource="hbm/TbQuestion.hbm.xml" />
+		<mapping resource="hbm/TbDdmsMsListInfo.hbm.xml" />
+		<mapping resource="hbm/TbPFInfo.hbm.xml" />
+		<mapping resource="hbm/TbMoneyLog.hbm.xml" />
+		<mapping resource="hbm/TbCheckMInfo.hbm.xml" />
+		<mapping resource="hbm/TbAppPay.hbm.xml" />
+		<mapping resource="hbm/TbAdvInfo.hbm.xml" />
+		<mapping resource="hbm/TbParamsInfo.hbm.xml" />
+		<mapping resource="hbm/TbYxCrmLog.hbm.xml" />
+		<mapping resource="hbm/TbPhoneTypeInfo.hbm.xml" />
+		<mapping resource="hbm/TbKoFeiLog.hbm.xml" />
+		<mapping resource="hbm/TbPhonekoufeiLog.hbm.xml" />
+		<mapping resource="hbm/TbAquaticIndex.hbm.xml" />
+		<mapping resource="hbm/TbAquaticPrice.hbm.xml" />
+		<mapping resource="hbm/TbAquaticType.hbm.xml" />
+		<mapping resource="hbm/TbForecastReference.hbm.xml" />
+		<mapping resource="hbm/TbGaleForecast.hbm.xml" />
+		<mapping resource="hbm/TbGaleHierrarchy.hbm.xml" />
+		<!--<mapping resource="hbm/TbSstForecast.hbm.xml" />-->
+		<mapping resource="hbm/TbTyphoonDetail.hbm.xml" />
+		<mapping resource="hbm/TbTyphoonList.hbm.xml" />
+		<mapping resource="hbm/TbWeatherAnalysis.hbm.xml" />
+	</session-factory>
+
+</hibernate-configuration>

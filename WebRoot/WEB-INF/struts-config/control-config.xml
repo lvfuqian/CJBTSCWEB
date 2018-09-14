@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddMsForm" type="com.elegps.tscweb.form.AddmsForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards > 
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AddMsForm"
+      name="AddMsForm"
+      path="/control"
+      type="com.elegps.tscweb.action.control.MsControlAction">
+      <forward name="listok" path="/jsp/control/controllist.jsp" />
+      <forward name="took" path="/jsp/control/controlupdate.jsp" />
+      <forward name="updateok" path="/control.do?CMD=0" />
+      <forward name="tonull" path="/control.do?CMD=0" />
+    </action>
+    <action forward="/jsp/ms/mspladdinfo.jsp" path="/mspladdjsp" />                           
+    </action-mappings>
+ <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

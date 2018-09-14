@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="ddbUserForm" type="com.elegps.tscweb.form.DdbuserForm" />
+	</form-beans>
+	<global-exceptions >
+		<exception key="a" type="java.lang.Throwable" path="login.do"></exception>
+	</global-exceptions>
+	<global-forwards>
+
+	</global-forwards>
+
+	<action-mappings>
+		<action 
+			attribute="ddbUserForm"
+			name="ddbUserForm" 
+			path="/ajax" 
+			scope="request"
+			type="com.elegps.tscweb.action.ddb.AjaxAction"></action>
+		<action 
+			path="/ddb" 
+			scope="request"
+			type="com.elegps.tscweb.action.ddb.DdbAction">
+			<forward name="ddb_search_sessuce" path="/jsp/ddb/ddblistinfo.jsp" />
+			<forward name="to_add_ok" path="/jsp/ddb/ddbaddinfo.jsp" />
+			<forward name="to_update_ok" path="/jsp/ddb/ddbupdateinfo.jsp" />
+			<forward name="ddb_update_sessuce" path="/ddb.do?CMD=ddb_search" />
+			<forward name="ddb_add_sessuce" path="/ddb.do?CMD=ddb_search" />
+			<forward name="ddb_delete_ok" path="/ddb.do?CMD=ddb_search" />
+		</action>
+	</action-mappings>
+	<controller processorClass="com.elegps.tscweb.comm.Charset" />
+	<message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

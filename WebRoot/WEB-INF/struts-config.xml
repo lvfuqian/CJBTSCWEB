@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="LoginForm" type="com.elegps.tscweb.form.LoginForm" />
+	</form-beans>
+	<global-forwards>
+		<forward name="logging" path="/login.jsp" />
+	</global-forwards>
+
+	<action-mappings>
+		<action attribute="LoginForm" input="/login.jsp" name="LoginForm"
+			path="/login" scope="request" type="com.elegps.tscweb.action.login.LoginAction">
+			<forward name="error" path="/login.jsp" />
+			<forward name="sucess" path="/main.jsp" />
+		</action>
+	</action-mappings>
+	<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />
+	<message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+	<message-resources parameter="MessageResources" />
+	<message-resources parameter="WebLabel" />
+</struts-config>
+

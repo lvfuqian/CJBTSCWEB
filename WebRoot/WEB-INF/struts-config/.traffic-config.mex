@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/traffic.do" location="950,50" dimension="301,104" />
+  <StrutsActivity path="/jsp/traffic/trafficsave.jsp" location="350,350" dimension="176,53" />
+  <StrutsActivity path="/jsp/traffic/trafficupdate.jsp" location="50,350" dimension="191,53" />
+  <StrutsActivity path="/jsp/traffic/trafficlist.jsp" location="950,250" dimension="166,53" />
+  <StrutsActivity path="/jsp/ddb/ddbaddinfo.jsp" location="0,234" dimension="177,53" />
+  <StrutsActivity path="/ddb" location="84,30" dimension="281,104" />
+  <StrutsActivity path="/jsp/ddb/ddblistinfo.jsp" location="277,234" dimension="170,53" />
+  <StrutsActivity path="/jsp/traffc/trafficlist.jsp" location="650,150" dimension="163,53" />
+  <StrutsTransition id="/traffic.do,to_jsp,/jsp/traffic/trafficupdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1131,154" />
+      <AbsolutePoint location="1131,376" />
+      <AbsolutePoint location="241,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/traffic.do,traffic_search,/jsp/traffic/trafficlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1033,154" />
+      <AbsolutePoint location="1033,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/traffic.do,search,/traffic.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1100,50" />
+      <AbsolutePoint location="1100,-45" />
+      <AbsolutePoint location="1326,-45" />
+      <AbsolutePoint location="1326,102" />
+      <AbsolutePoint location="1251,102" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/traffic/trafficlist.jsp,null,/traffic.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1100,250" />
+      <AbsolutePoint location="1100,154" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/traffic.do,to_jsp2,/jsp/traffic/trafficsave.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1100,102" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

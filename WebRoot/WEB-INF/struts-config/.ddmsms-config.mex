@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/ddmsms.do" location="165,15" dimension="322,84" />
+  <StrutsActivity path="/jsp/ddmsms/ddmsmsaddinfo.jsp" location="600,30" dimension="214,48" />
+  <StrutsActivity path="/jsp/ddmsms/ddmsmslistinfo.jsp" location="75,195" dimension="220,48" />
+  <StrutsTransition id="/ddmsms.do,showddmssmslist,ddmsms.do,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="0,159" rDim2="-204,0" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddmsms.do,showddmssmslist,a,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="487,65" />
+      <AbsolutePoint location="950,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddmsms.do,success,/jsp/ddmsms/ddmsmslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="280,99" />
+      <AbsolutePoint location="280,195" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddmsms.do,ddmsmsaddjsp,/jsp/ddmsms/ddmsmsaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="487,57" />
+      <AbsolutePoint location="600,57" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddmsms.do,showddmssmslist,/ddmsms.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="326,57" />
+      <AbsolutePoint location="326,57" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/money" type="com.elegps.tscweb.action.money.MoneyAction">
+      <forward name="cqjsp" path="/jsp/money/cq.jsp" />
+      <forward name="cqlistinfojsp" path="/jsp/money/cqlistinfo.jsp" />
+      <forward name="cqinfojsp" path="/jsp/money/cqinfo.jsp" />
+      <forward name="mscqjsp" path="/jsp/money/mscq.jsp" />
+      <forward name="mscqlistinfojsp" path="/jsp/money/mscqlistinfo.jsp" />
+	  <forward name="ms_money_plczjsp" path="/jsp/money/msplcq.jsp" />
+	  <forward name="cqlistinfo_ajsp" path="/jsp/money/cqlistinfoa.jsp" />
+	  <forward name="cqinfoajsp" path="/jsp/money/czinfoa.jsp" />
+      <forward name="success" path="/firstmain.jsp" />
+      
+      <forward name="moneylog_listjsp" path="/jsp/money/moneyloglist.jsp" />
+      
+      
+      <forward name="cmlistinfo" path="/check.do?CMD=checklistinfojsp" />
+      <forward name="cmlistinfoep" path="/check.do?CMD=checklistinfoepjsp" />
+      <forward name="cmlistinfoms" path="/check.do?CMD=checklistinfomsjsp" />
+      <!-- 调用显示微信二维码（扫码支付） -->
+      <forward name="wechatjsp" path="/wechatjsp/native_demo.jsp" />
+      
+    </action>
+    <!-- 充值审核 -->
+    <action path="/check" type="com.elegps.tscweb.action.money.CheckMoneyAction">
+      <forward name="cmlistinfo" path="/jsp/money/check/cmlist.jsp" />
+      <forward name="cminfo" path="/jsp/money/check/cm.jsp" />
+      <forward name="success" path="/firstmain.jsp" />
+      
+      <forward name="cmlistinfoa" path="/check.do?CMD=checklistinfojsp" />
+      <forward name="cmlistinfoep" path="/check.do?CMD=checklistinfoepjsp" />
+      <forward name="cmlistinfoms" path="/check.do?CMD=checklistinfomsjsp" />
+    </action>
+    
+    <!--  资金回收-->
+    <action path="/recycle" type="com.elegps.tscweb.action.money.RecycleMoneyAction">
+      <forward name="hsepjsp" path="/jsp/money/recycle/hs_ep_money.jsp" />
+      <forward name="hsmsjsp" path="/jsp/money/recycle/hs_ms_money.jsp" />
+      <forward name="hsep" path="/recycle.do?CMD=hs_ep_money_jsp" />
+      <forward name="hsms" path="/recycle.do?CMD=hs_ms_money_jsp" />
+      <forward name="success" path="/firstmain.jsp" />
+    </action>
+    
+    </action-mappings>
+
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>

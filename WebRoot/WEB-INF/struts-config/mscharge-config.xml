@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+   
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/mscharge" type="com.elegps.tscweb.action.mscharge.MsChargeListAction">
+      <forward name="mschargejsp" path="/jsp/mscharge/mscharge.jsp" />
+      <forward name="succes" path="/jsp/mscharge/mschargelistinfo.jsp" />
+      <forward name="msdeduct" path="/jsp/mscharge/msdeductlistinfo.jsp" />
+      <forward name="lsmscharge" path="/jsp/mscharge/mschargeinfo.jsp" />
+      <forward name="epcharge" path="/jsp/mscharge/epchargeinfo.jsp" />
+      <forward name="showmschargelist" path="/mscharge.do?CMD=mscharge_search" />
+    </action>                       
+    </action-mappings>
+ <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

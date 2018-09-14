@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/mscharge.do" location="390,285" dimension="286,84" />
+  <StrutsActivity path="/jsp/mscharge/mscharge.jsp" location="650,50" dimension="196,48" />
+  <StrutsActivity path="/jsp/mscharge/mschargelistinfo.jsp" location="315,30" dimension="244,48" />
+  <StrutsActivity path="/jsp/mscharge/mschargeinfo.jsp" location="50,150" dimension="220,48" />
+  <StrutsActivity path="/jsp/mscharge/epchargeinfo.jsp" location="950,50" dimension="220,48" />
+  <StrutsActivity path="/jsp/mscharge/msdeductlistinfo.jsp" location="350,150" dimension="244,48" />
+  <StrutsTransition id="/mscharge.do,mschargejsp,/jsp/mscharge/mscharge.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,285" />
+      <AbsolutePoint location="665,98" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mscharge.do,msdeduct,/jsp/mscharge/msdeductlistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="533,285" />
+      <AbsolutePoint location="533,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mscharge.do,epcharge,/jsp/mscharge/epchargeinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="676,327" />
+      <AbsolutePoint location="1060,327" />
+      <AbsolutePoint location="1060,98" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mscharge.do,lsmscharge,/jsp/mscharge/mschargeinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,327" />
+      <AbsolutePoint location="160,327" />
+      <AbsolutePoint location="160,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mscharge.do,showmschargelist,/mscharge.do,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="0,-69" rDim2="0,-69" />
+      <Point rDim1="82,-72" rDim2="82,-72" />
+      <Point rDim1="247,-72" rDim2="247,-72" />
+      <Point rDim1="252,0" rDim2="252,0" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mscharge.do,succes,/jsp/mscharge/mschargelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="609,285" />
+      <AbsolutePoint location="609,65" />
+      <AbsolutePoint location="559,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

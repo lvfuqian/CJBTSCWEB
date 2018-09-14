@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/rolemenu" type="com.elegps.tscweb.action.rolemenu.RoleMenuListAction">
+      <forward name="rolemenuaddjsp" path="/jsp/rolemenu/rolemuaddinfo.jsp" />
+      <forward name="showrolemenulist" path="/rolemenu.do?CMD=rolemenu_search" />
+      <forward name="rolemenuaddplmenujsp" path="/jsp/rolemenu/rolemuaddplinfo.jsp" />
+      <forward name="success" path="/jsp/rolemenu/rolemulistinfo.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

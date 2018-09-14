@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddQuestionForm" type="com.elegps.tscweb.form.AddQuestionForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards > 
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AddQuestionForm"
+      name="AddQuestionForm"
+      path="/question"
+      type="com.elegps.tscweb.action.question.QuestionListAction">
+      <forward name="succes" path="/jsp/question/questionlistinfo.jsp" />
+      <forward name="addquestionjsp" path="/jsp/question/questionaddinfo.jsp" />
+      <forward name="xingxi" path="/jsp/question/questionxx.jsp" />
+      <forward name="msmodify" path="/jsp/question/questionmody.jsp" />
+      <forward name="showquestionlist" path="/question.do?CMD=question_search" />
+    </action>                         
+    </action-mappings>
+ <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

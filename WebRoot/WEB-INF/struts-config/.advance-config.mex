@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/advance.do" location="405,15" dimension="322,84" />
+  <StrutsActivity path="/jsp/orgadvance/advancemody.jsp" location="960,255" dimension="226,48" />
+  <StrutsActivity path="/jsp/orgadvance/advancelistinfo.jsp" location="375,300" dimension="250,48" />
+  <StrutsActivity path="/jsp/orgadvance/advancexx.jsp" location="30,60" dimension="214,48" />
+  <StrutsActivity path="/jsp/orgadvance/validate.jsp" location="50,350" dimension="208,48" />
+  <StrutsActivity path="/jsp/orgadvance/advanceaddinfo.jsp" location="180,225" dimension="244,48" />
+  <StrutsActivity path="/jsp/orgadvance/validatelistinfo.jsp" location="650,150" dimension="256,48" />
+  <StrutsActivity path="/jsp/orgadvance/orgadvanceaddinfo.jsp" location="675,345" dimension="262,48" />
+  <StrutsActivity path="/jsp/orgadvance/chargelistinfo.jsp" location="50,450" dimension="244,48" />
+  <StrutsTransition id="/jsp/orgadvance/orgadvanceaddinfo.jsp,null,/advance.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="921,345" />
+      <AbsolutePoint location="921,87" />
+      <AbsolutePoint location="727,87" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,valisucces,/jsp/orgadvance/validatelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,99" />
+      <AbsolutePoint location="665,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,modiadvancejsp,/jsp/orgadvance/advancemody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="727,57" />
+      <AbsolutePoint location="1073,57" />
+      <AbsolutePoint location="1073,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,validatejsp,/jsp/orgadvance/validate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="536,99" />
+      <AbsolutePoint location="536,165" />
+      <AbsolutePoint location="154,165" />
+      <AbsolutePoint location="154,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,xiangxi,/jsp/orgadvance/advancexx.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,75" />
+      <AbsolutePoint location="244,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,addadvancejsp,/jsp/orgadvance/advanceaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="409,99" />
+      <AbsolutePoint location="409,225" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,showadvancelist,/advance.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="566,15" />
+      <AbsolutePoint location="566,-60" />
+      <AbsolutePoint location="832,-60" />
+      <AbsolutePoint location="832,27" />
+      <AbsolutePoint location="727,27" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,chargesucces,/jsp/orgadvance/chargelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,45" />
+      <AbsolutePoint location="-45,45" />
+      <AbsolutePoint location="-45,474" />
+      <AbsolutePoint location="50,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advance.do,succes,/jsp/orgadvance/advancelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="566,99" />
+      <AbsolutePoint location="566,300" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

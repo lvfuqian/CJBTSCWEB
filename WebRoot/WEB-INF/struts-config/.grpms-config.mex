@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/grpms.do" location="50,50" dimension="262,84" />
+  <StrutsActivity path="/jsp/grpms/msgrpaddplgrpinfo.jsp" location="950,150" dimension="232,48" />
+  <StrutsActivity path="/jsp/grpms/grpmsaddplinfo.jsp" location="450,255" dimension="214,48" />
+  <StrutsActivity path="/jsp/grpms/grpmsmody.jsp" location="950,250" dimension="184,48" />
+  <StrutsActivity path="/jsp/grpms/msgrpaddplinfo.jsp" location="650,150" dimension="214,48" />
+  <StrutsActivity path="/jsp/grpms/grpmslistinfo.jsp" location="105,225" dimension="208,48" />
+  <StrutsActivity path="/jsp/grpms/grpmsaddinfo.jsp" location="480,45" dimension="202,48" />
+  <StrutsActivity path="/jsp/grpms/testsgrpmsmody.jsp" location="50,350" dimension="220,53" />
+  <StrutsActivity path="/jsp/grpms/testgrpmsmody.jsp" location="950,350" dimension="214,53" />
+  <StrutsActivity path="/jsp/grpms/tgrpmsmody.jsp" location="350,450" dimension="197,53" />
+  <StrutsActivity path="/jsp/grpms/tsetgrpmsmody.jsp" location="650,450" dimension="214,53" />
+  <StrutsTransition id="/grpms.do,grpmsmdifyjsp,/jsp/grpms/tsetgrpmsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,134" />
+      <AbsolutePoint location="90,318" />
+      <AbsolutePoint location="757,318" />
+      <AbsolutePoint location="757,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,success,/jsp/grpms/grpmslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="151,134" />
+      <AbsolutePoint location="151,225" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsaddjsp,/jsp/grpms/grpmsaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,78" />
+      <AbsolutePoint location="480,78" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsaddplmsjsp,/jsp/grpms/grpmsaddplinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,108" />
+      <AbsolutePoint location="557,108" />
+      <AbsolutePoint location="557,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,kygrpmsaddplgrpjsp,/jsp/grpms/msgrpaddplgrpinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,50" />
+      <AbsolutePoint location="181,-30" />
+      <AbsolutePoint location="1066,-30" />
+      <AbsolutePoint location="1066,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsmdifyjsp,/jsp/grpms/grpmsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,134" />
+      <AbsolutePoint location="90,318" />
+      <AbsolutePoint location="1042,318" />
+      <AbsolutePoint location="1042,298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsmdifyjsp,/jsp/grpms/tgrpmsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,92" />
+      <AbsolutePoint location="-25,92" />
+      <AbsolutePoint location="-25,476" />
+      <AbsolutePoint location="350,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsmdifyjsp,/jsp/grpms/testsgrpmsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,134" />
+      <AbsolutePoint location="90,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsmdifyjsp,/jsp/grpms/testgrpmsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,134" />
+      <AbsolutePoint location="90,318" />
+      <AbsolutePoint location="1057,318" />
+      <AbsolutePoint location="1057,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,grpmsaddplgrpjsp,/jsp/grpms/msgrpaddplinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,134" />
+      <AbsolutePoint location="181,174" />
+      <AbsolutePoint location="650,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/grpms.do,showgrpmslist,/grpms.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="159,50" />
+      <AbsolutePoint location="159,-117" />
+      <AbsolutePoint location="376,-117" />
+      <AbsolutePoint location="376,56" />
+      <AbsolutePoint location="312,56" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

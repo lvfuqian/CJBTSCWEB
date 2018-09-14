@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/gps.do" location="45,45" dimension="238,84" />
+  <StrutsActivity path="/jsp/gps/gpslistinfo.jsp" location="350,50" dimension="184,48" />
+  <StrutsActivity path="/jsp/gps/gpsaddinfo.jsp" location="650,50" dimension="178,48" />
+  <StrutsActivity path="/jsp/gps/gpsmody.jsp" location="60,210" dimension="160,48" />
+  <StrutsActivity path="asdafsd" location="950,50" dimension="82,48" />
+  <StrutsActivity path="/jsp/gps/kfgpslistinfo.jsp" location="350,150" dimension="196,48" />
+  <StrutsTransition id="/gps.do,gpsmdify,/jsp/gps/gpsmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,129" />
+      <AbsolutePoint location="134,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/gps/gpsaddinfo.jsp,null,/gps.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="709,98" />
+      <AbsolutePoint location="709,113" />
+      <AbsolutePoint location="283,113" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gps.do,showgpslist,/gps.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="164,45" />
+      <AbsolutePoint location="164,-28" />
+      <AbsolutePoint location="318,-28" />
+      <AbsolutePoint location="318,61" />
+      <AbsolutePoint location="283,61" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gps.do,addjsp,/jsp/gps/gpsaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,45" />
+      <AbsolutePoint location="134,-103" />
+      <AbsolutePoint location="739,-103" />
+      <AbsolutePoint location="739,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gps.do,succes,/jsp/gps/gpslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="283,83" />
+      <AbsolutePoint location="350,83" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gps.do,kfsucces,/jsp/gps/kfgpslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="164,129" />
+      <AbsolutePoint location="164,174" />
+      <AbsolutePoint location="350,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

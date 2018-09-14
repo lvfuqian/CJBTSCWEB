@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CJBTSCWEB"
+  id="myeclipse.1395713418943"
+  context-root="/CJBTSCWEB"
+  j2ee-spec="6.0"
+  archive="CJBTSCWEB.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

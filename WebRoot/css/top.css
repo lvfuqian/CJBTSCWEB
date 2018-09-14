@@ -1,0 +1,39 @@
+/* CSS Document */
+.logo{
+	height:auto;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration: none;
+}
+
+.logo a{color:#ffffff;text-decoration:none}
+.logo a:hover{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #99CCFF;
+	background-repeat: repeat;
+}
+.logo a:active {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+.menu{
+	height:auto;
+	text-align:left;
+	font-size:12px;
+	border: 1px solid #89C8F9;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+.menu a{color:#05398e;text-decoration:none}
+.menu a:hover{color:#000000;text-decoration:underline;}

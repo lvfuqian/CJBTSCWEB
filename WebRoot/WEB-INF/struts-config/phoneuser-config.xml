@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="ddbUserForm" type="com.elegps.tscweb.form.DdbuserForm" />
+	</form-beans>
+	<global-exceptions>
+		<exception key="a" type="java.lang.Throwable" path="login.do"></exception>
+	</global-exceptions>
+	<global-forwards>
+
+	</global-forwards>
+
+	<action-mappings>
+		<action attribute="ddbUserForm" name="ddbUserForm" path="/puser"
+			scope="request" type="com.elegps.tscweb.action.ddb.PhoneUserAction">
+			<forward name="spu_success" path="/jsp/puser/listphoneuser.jsp" />
+			<forward name="to_add_success" path="/jsp/puser/addphoneuser.jsp" />
+			<forward name="spu_add_sessuce" path="/puser.do?CMD=0" />
+			<forward name="to_update_success" path="/jsp/puser/updatephoneuser.jsp" />
+			<forward name="spu_update_success" path="/puser.do?CMD=0" />
+			<forward name="spu_delete_success" path="/puser.do?CMD=0" />
+		</action>
+	</action-mappings>
+	<controller processorClass="com.elegps.tscweb.comm.Charset" />
+	<message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

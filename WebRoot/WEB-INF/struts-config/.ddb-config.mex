@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/ddb.do" location="50,450" dimension="281,104" />
+  <StrutsActivity path="/jsp/ddb/ddbaddinfo.jsp" location="950,1450" dimension="177,53" />
+  <StrutsActivity path="/jsp/ddb/ddblistinfo.jsp" location="50,850" dimension="170,53" />
+  <StrutsActivity path="/jsp/ddb/ddbupdateinfo.jsp" location="50,1650" dimension="195,53" />
+  <StrutsActivity path="/jsp/agent/agentmody.jsp" location="0,264" dimension="183,53" />
+  <StrutsActivity path="/jsp/agent/kfagentlistinfo.jsp" location="283,264" dimension="199,53" />
+  <StrutsActivity path="/jsp/agent/agentaddinfo.jsp" location="582,264" dimension="195,53" />
+  <StrutsActivity path="/jsp/agent/agentlistinfo.jsp" location="877,264" dimension="188,53" />
+  <StrutsActivity path="/jsp/agent/agentxx.jsp" location="1165,264" dimension="162,53" />
+  <StrutsActivity path="/jsp/ddb/agentmody.jsp" location="650,450" dimension="174,53" />
+  <StrutsActivity path="/jsp/ddb/kfagentlistinfo.jsp" location="950,450" dimension="190,53" />
+  <StrutsActivity path="/jsp/ddb/agentaddinfo.jsp" location="50,650" dimension="186,53" />
+  <StrutsActivity path="/jsp/ddb/agentlistinfo.jsp" location="350,650" dimension="179,53" />
+  <StrutsActivity path="/jsp/ddb/agentxx.jsp" location="650,650" dimension="153,53" />
+  <StrutsActivity path="/jsp/addb/agentaddinfo.jsp" location="950,650" dimension="193,53" />
+  <StrutsActivity path="/jsp/ddb/test.jsp" location="350,850" dimension="129,53" />
+  <StrutsActivity path="/jsp/ddb/te's.jsp" location="650,850" dimension="128,53" />
+  <StrutsActivity path="/jsp/ddb/te.jsp" location="950,850" dimension="119,53" />
+  <StrutsActivity path="/jsp/ddb/t.jsp" location="50,1050" dimension="112,53" />
+  <StrutsActivity path="/jsp/ms/ddblistinfo.jsp" location="350,1050" dimension="163,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddmsmslistinfo.jsp" location="650,1050" dimension="222,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'm's'li's'tinfo.jsp" location="950,1050" dimension="240,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'm's'li'sinfo.jsp" location="50,1250" dimension="233,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'm's'liinfo.jsp" location="350,1250" dimension="224,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'm's'linfo.jsp" location="650,1250" dimension="221,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'm'sinfo.jsp" location="950,1250" dimension="215,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm's'minfo.jsp" location="1250,450" dimension="206,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddm'sinfo.jsp" location="1250,650" dimension="192,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddminfo.jsp" location="1250,850" dimension="183,53" />
+  <StrutsActivity path="/jsp/ddmsms/ddblistinfo.jsp" location="1250,1050" dimension="196,53" />
+  <StrutsActivity path="/jsp/ddm's'm's/ddblistinfo.jsp" location="1250,1250" dimension="205,53" />
+  <StrutsActivity path="/jsp/ddm's'm/ddblistinfo.jsp" location="50,1450" dimension="196,53" />
+  <StrutsActivity path="/jsp/ddm's/ddblistinfo.jsp" location="350,1450" dimension="182,53" />
+  <StrutsActivity path="/jsp/ddm/ddblistinfo.jsp" location="650,1450" dimension="173,53" />
+  <StrutsActivity path="jsp/ddb/ddblistinfo.jsp" location="1250,1450" dimension="165,53" />
+  <StrutsActivity path="/ajax.do" />
+  <StrutsTransition id="/ddb.do,to_update_ok,/jsp/ddb/ddbupdateinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="190,502" />
+      <AbsolutePoint location="147,1676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,to_add_ok,/jsp/ddb/ddbaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="328,554" />
+      <AbsolutePoint location="328,1378" />
+      <AbsolutePoint location="1038,1378" />
+      <AbsolutePoint location="1038,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,ddb_search_sessuce,/jsp/ddb/ddblistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="251,554" />
+      <AbsolutePoint location="251,876" />
+      <AbsolutePoint location="220,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,ddb_delete_ok,/ddb.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="190,502" />
+      <AbsolutePoint location="190,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,ddb_add_sessuce,/ddb.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="190,502" />
+      <AbsolutePoint location="190,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ddb.do,ddb_update_sessuce,/ddb.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="198,450" />
+      <AbsolutePoint location="198,392" />
+      <AbsolutePoint location="425,392" />
+      <AbsolutePoint location="425,488" />
+      <AbsolutePoint location="331,488" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

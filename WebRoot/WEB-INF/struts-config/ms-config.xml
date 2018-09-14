@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddMsForm" type="com.elegps.tscweb.form.AddmsForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards > 
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AddMsForm"
+      name="AddMsForm"
+      path="/ms"
+      type="com.elegps.tscweb.action.ms.MsListAction">
+      <forward name="mspladdjsp" path="/jsp/ms/mspladdinfo.jsp" />
+      <forward name="xiangxi" path="/jsp/ms/msxx.jsp" />
+      <forward name="succes" path="/jsp/ms/mslistinfo.jsp" />
+      <forward name="msaddjsp" path="/jsp/ms/msaddinfo.jsp" />
+      <forward name="msmodify" path="/jsp/ms/msmody.jsp" />
+      <forward name="getmsext" path="/jsp/ms/msmodyext.jsp" />
+      <forward name="kfsucces" path="/jsp/ms/kfmslistinfo.jsp" />
+      <forward name="fpmsjsp" path="/jsp/ms/fpms.jsp" />
+      <forward name="showmslist" path="/ms.do?CMD=ms_search" />
+      <forward name="kfshowmslist" path="/ms.do?CMD=ms_search&amp;type=1" />
+      <forward name="pbjsp" path="/jsp/ms/msphonebind.jsp" />
+      <forward name="excelms" path="/jsp/ms/excelms.jsp" />
+    </action>
+    <action forward="/jsp/ms/mspladdinfo.jsp" path="/mspladdjsp" />                           
+    </action-mappings>
+ <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

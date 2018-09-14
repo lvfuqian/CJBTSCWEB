@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/role.do" location="236,30" dimension="310,84" />
+  <StrutsActivity path="/jsp/role/rolelistinfo.jsp" location="735,150" dimension="196,48" />
+  <StrutsActivity path="/jsp/role/roleaddinfo.jsp" location="705,255" dimension="190,48" />
+  <StrutsActivity path="/jsp/role/rolemody.jsp" location="75,240" dimension="172,48" />
+  <StrutsTransition id="/jsp/menu/menuaddinfo.jsp,null,/role.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="397,225" />
+      <AbsolutePoint location="438,164" />
+      <AbsolutePoint location="429,164" />
+      <AbsolutePoint location="429,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,showmenulist,/menu.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,114" />
+      <AbsolutePoint location="421,186" />
+      <AbsolutePoint location="950,186" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,succes,/jsp/menu/menulistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="236,72" />
+      <AbsolutePoint location="98,72" />
+      <AbsolutePoint location="98,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,showmenulist,/role.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,30" />
+      <AbsolutePoint location="391,0" />
+      <AbsolutePoint location="206,0" />
+      <AbsolutePoint location="206,72" />
+      <AbsolutePoint location="236,72" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/role/roleaddinfo.jsp,null,/role.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="705,279" />
+      <AbsolutePoint location="391,279" />
+      <AbsolutePoint location="391,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,menumdify,/jsp/menu/menumody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="507,114" />
+      <AbsolutePoint location="507,164" />
+      <AbsolutePoint location="672,164" />
+      <AbsolutePoint location="672,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,menumdify,/jsp/menu/menumody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="546,72" />
+      <AbsolutePoint location="672,72" />
+      <AbsolutePoint location="672,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/menu/menuaddinfo.jsp,null,/role.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="320,225" />
+      <AbsolutePoint location="361,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,roleaddjsp,/jsp/role/roleaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,114" />
+      <AbsolutePoint location="421,213" />
+      <AbsolutePoint location="800,213" />
+      <AbsolutePoint location="800,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,menuaddjsp,/jsp/menu/menuaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,114" />
+      <AbsolutePoint location="350,225" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,showrolelist,/role.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,30" />
+      <AbsolutePoint location="391,-45" />
+      <AbsolutePoint location="661,-45" />
+      <AbsolutePoint location="661,72" />
+      <AbsolutePoint location="546,72" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,succes,/jsp/role/rolelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="546,42" />
+      <AbsolutePoint location="833,42" />
+      <AbsolutePoint location="833,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,rolemdify,/jsp/role/rolemody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,72" />
+      <AbsolutePoint location="161,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,succes,/jsp/menu/menulistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="274,114" />
+      <AbsolutePoint location="274,164" />
+      <AbsolutePoint location="98,164" />
+      <AbsolutePoint location="98,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,menumdify,/jsp/role/rolemody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="361,114" />
+      <AbsolutePoint location="361,279" />
+      <AbsolutePoint location="247,279" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,menuaddjsp,/jsp/menu/menuaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="352,114" />
+      <AbsolutePoint location="352,164" />
+      <AbsolutePoint location="343,164" />
+      <AbsolutePoint location="302,225" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

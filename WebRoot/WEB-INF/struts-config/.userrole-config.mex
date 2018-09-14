@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/userrole.do" location="950,50" dimension="358,84" />
+  <StrutsActivity path="/jsp/userrole/userroleaddinfo.jsp" location="585,75" dimension="238,48" />
+  <StrutsActivity path="/jsp/userrole/userrolelistinfo.jsp" location="705,255" dimension="244,48" />
+  <StrutsTransition id="/userrole.do,showuserrolelist,/userrole.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,50" />
+      <AbsolutePoint location="1129,-25" />
+      <AbsolutePoint location="1383,-25" />
+      <AbsolutePoint location="1383,92" />
+      <AbsolutePoint location="1308,92" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userrole.do,success,/jsp/userrole/userrolelistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,134" />
+      <AbsolutePoint location="1129,279" />
+      <AbsolutePoint location="949,279" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userrole.do,userroleaddjsp,/jsp/userrole/userroleaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,92" />
+      <AbsolutePoint location="823,92" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddGpsForm" type="com.elegps.tscweb.form.AddgpsForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AddGpsForm"
+      input="/jsp/gps/gpsaddinfo.jsp"
+      name="AddGpsForm"
+      path="/gps"
+      scope="request"
+      type="com.elegps.tscweb.action.gps.GpsListAction">
+      <forward name="succes" path="/jsp/gps/gpslistinfo.jsp" />
+      <forward name="addjsp" path="/jsp/gps/gpsaddinfo.jsp" />
+      <forward name="kfsucces" path="/jsp/gps/kfgpslistinfo.jsp" />
+      <forward name="showgpslist" path="/gps.do?CMD=gps_id_list" />
+      <forward name="gpsmdify" path="/jsp/gps/gpsmody.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddGrpForm" type="com.elegps.tscweb.form.AddgrpForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AddGrpForm"
+      input="/jsp/grp/grpaddinfo.jsp"
+      name="AddGrpForm"
+      path="/grp"
+      scope="request"
+      type="com.elegps.tscweb.action.grp.GrpListAction">
+      <forward name="showgrplist" path="/grp.do?CMD=grp_search" />
+      <forward name="kfshowgrplist" path="/grp.do?CMD=grp_search&amp;type=1" />
+      <forward name="succes" path="/jsp/grp/grplistinfo.jsp" />
+      <forward name="xiangxi" path="/jsp/grp/grpxx.jsp" />
+      <forward name="grpmdify" path="/jsp/grp/grpmody.jsp" />
+      <forward name="kfsucces" path="/jsp/grp/kfgrplistinfo.jsp" />
+      <forward name="toaddjsp" path="/jsp/grp/grpaddinfo.jsp" />
+      <forward name="basesearche" path="/jsp/grp/basegrpshow.jsp" />
+      <forward name="basesucces" path="/grp.do?CMD=basegrp_search" />
+      <forward name="baseaddjsp" path="/jsp/grp/basegrpaddinfo.jsp" />
+      <forward name="baseupdatejsp" path="/jsp/grp/basegrpupdate.jsp" />
+    </action>
+    
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

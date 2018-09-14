@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/adv" type="com.elegps.tscweb.action.Adv.AdvAction">
+      <forward name="advaddjsp" path="/jsp/adv/advadd.jsp" />
+      <forward name="advlist" path="/jsp/adv/advlistinfo.jsp" />
+      <forward name="advmodyjsp" path="/jsp/adv/advmody.jsp" />
+      <forward name="success" path="/jsp/adv/advlistinfo.jsp" />
+      <forward name="toadvlist" path="/adv.do?CMD=advlist" />
+      <forward name="toadvyulan" path="/jsp/adv/show/advyulan.jsp" />
+      <forward name="advshoww" path="/jsp/adv/show/advshoww.jsp" />
+      <forward name="advshowp" path="/jsp/adv/show/advshowp.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>

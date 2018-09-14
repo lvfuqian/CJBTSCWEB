@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="trafficForm" type="com.elegps.tscweb.form.TrafficForm" />
+	</form-beans>
+	<global-exceptions >
+		<exception key="a" type="java.lang.Throwable" path="login.do"></exception>
+	</global-exceptions>
+
+	<action-mappings>
+		<action input="/jsp/traffic/trafficlist.jsp"  attribute="trafficForm" name="trafficForm" path="/traffic"
+			scope="request" type="com.elegps.tscweb.action.traffic.TrafficAction">
+			<forward name="traffic_search" path="/jsp/traffic/trafficlist.jsp" />
+			<forward name="to_jsp" path="/jsp/traffic/trafficupdate.jsp" />
+			<forward name="to_jsp2" path="/jsp/traffic/trafficsave.jsp" />
+			<forward name="search" path="/traffic.do?CMD=traffic_search" />
+		</action>
+	</action-mappings>
+	<controller processorClass="com.elegps.tscweb.comm.Charset" />
+	<message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+</struts-config>
+

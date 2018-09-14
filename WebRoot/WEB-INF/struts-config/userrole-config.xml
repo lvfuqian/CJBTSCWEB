@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/userrole" type="com.elegps.tscweb.action.userrole.UserRoleListAction">
+      <forward name="userroleaddjsp" path="/jsp/userrole/userroleaddinfo.jsp" />
+      <forward name="showuserrolelist" path="/userrole.do?CMD=userrole_search" />
+      <forward name="success" path="/jsp/userrole/userrolelistinfo.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

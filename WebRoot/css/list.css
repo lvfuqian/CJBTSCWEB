@@ -1,0 +1,79 @@
+/* CSS Document */
+table {
+	border-collapse: collapse;
+}
+
+div#m_button {
+	margin: 20px;
+	text-align: left
+}
+
+div#m_list {
+	margin: 20px 20px 20px 20px;
+	text-align: left
+}
+
+div#m_edit {
+	padding: 15px;
+	clear: both;
+}
+
+input,textarea {
+	font-size: .9em;
+	border: 1px solid #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+input.checkbox {
+	border: 1px solid #89C8F9;
+}
+
+input.button {
+	width: 5em;
+	background-color: #F1F1F1;
+	margin-left: 1em;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #333333;
+}
+
+td a {
+	color: #003179;
+	text-decoration: none
+}
+
+td a:hover {
+	color: #000000;
+	text-decoration: none;
+	background: #f1f1f1
+}
+
+.list_header {
+	background: #D3E5FF;
+	text-align: center;
+	color: #0A326C;
+	border: solid ;
+	border-width: 1px 1px 1px 1px;
+}
+.listtable tr td{
+border-left:dotted;
+border-right: dotted;
+border-bottom: solid;
+border-top:solid;
+border-width: 1px 0px 1px 1px;
+}
+.list_footer {
+	background: #e4f2f9;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+	padding: 1em;
+}
+
+.red {
+	color: red
+}

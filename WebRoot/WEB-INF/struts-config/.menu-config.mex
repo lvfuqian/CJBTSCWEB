@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/menu.do" location="630,75" dimension="322,84" />
+  <StrutsActivity path="/jsp/menu/menulistinfo.jsp" location="510,-15" dimension="196,48" />
+  <StrutsActivity path="/jsp/menu/menuaddinfo.jsp" location="650,250" dimension="190,48" />
+  <StrutsActivity path="/jsp/menu/menumody.jsp" location="285,150" dimension="172,48" />
+  <StrutsTransition id="/jsp/menu/menuaddinfo.jsp,null,/menu.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="745,250" />
+      <AbsolutePoint location="745,159" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/menu.do,showmenulist,/menu.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="791,75" />
+      <AbsolutePoint location="791,0" />
+      <AbsolutePoint location="1057,0" />
+      <AbsolutePoint location="1057,117" />
+      <AbsolutePoint location="952,117" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/menu.do,succes,/jsp/menu/menulistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="691,75" />
+      <AbsolutePoint location="691,33" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/menu.do,menuaddjsp,/jsp/menu/menuaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="791,159" />
+      <AbsolutePoint location="791,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/menu.do,menumdify,/jsp/menu/menumody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="630,117" />
+      <AbsolutePoint location="371,117" />
+      <AbsolutePoint location="371,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

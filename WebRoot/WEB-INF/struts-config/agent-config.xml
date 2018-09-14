@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  	<form-bean name="AddAgentForm" type="com.elegps.tscweb.form.AddAgentForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="agentaddinfo"
+      input="/jsp/agent/agentaddinfo.jsp"
+      name="AddAgentForm"
+      path="/agent"
+      scope="request"
+      type="com.elegps.tscweb.action.Agent.AgentListAction">
+      <forward name="showagentlist" path="/agent.do?CMD=argment_search" />
+      <forward name="kfshowagentlist" path="/agent.do?CMD=argment_search&amp;type=1" />
+      <forward name="xiangxi" path="/jsp/agent/agentxx.jsp" />
+      <forward name="succes" path="/jsp/agent/agentlistinfo.jsp" />
+      <forward name="addagentjsp" path="/jsp/agent/agentaddinfo.jsp" />
+      <forward name="kfsucces" path="/jsp/agent/kfagentlistinfo.jsp" />
+      <forward name="updateagentjsp" path="/jsp/agent/agentmody.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

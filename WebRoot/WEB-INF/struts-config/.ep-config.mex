@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/ep.do" location="150,165" dimension="382,84" />
+  <StrutsActivity path="/jsp/enterprise/epmody.jsp" location="600,345" dimension="196,48" />
+  <StrutsActivity path="/jsp/enterprise/eplistinfo.jsp" location="630,195" dimension="220,48" />
+  <StrutsActivity path="/jsp/enterprise/epxx.jsp" location="690,60" dimension="184,48" />
+  <StrutsActivity path="/jsp/enterprise/epaddinfo.jsp" location="30,375" dimension="214,48" />
+  <StrutsActivity path="/jsp/enterprise/kfeplistinfo.jsp" location="950,150" dimension="232,48" />
+  <StrutsTransition id="/ep.do,kfshoweplist,/ep.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="289,165" />
+      <AbsolutePoint location="289,-102" />
+      <AbsolutePoint location="583,-102" />
+      <AbsolutePoint location="583,210" />
+      <AbsolutePoint location="532,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,succes,/jsp/enterprise/eplistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="532,232" />
+      <AbsolutePoint location="630,232" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,epmodifyjsp,/jsp/enterprise/epmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="341,249" />
+      <AbsolutePoint location="341,360" />
+      <AbsolutePoint location="600,360" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,kfsucces,/jsp/enterprise/kfeplistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="311,165" />
+      <AbsolutePoint location="311,-15" />
+      <AbsolutePoint location="1066,-15" />
+      <AbsolutePoint location="1066,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/enterprise/epaddinfo.jsp,null,/ep.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,375" />
+      <AbsolutePoint location="152,249" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,showeplist,/ep.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="371,165" />
+      <AbsolutePoint location="371,150" />
+      <AbsolutePoint location="547,150" />
+      <AbsolutePoint location="547,177" />
+      <AbsolutePoint location="532,177" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,xiangxi,/jsp/enterprise/epxx.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="341,165" />
+      <AbsolutePoint location="341,84" />
+      <AbsolutePoint location="690,84" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ep.do,epaddjsp,/jsp/enterprise/epaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="229,249" />
+      <AbsolutePoint location="229,375" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

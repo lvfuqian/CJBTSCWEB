@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/grpms" type="com.elegps.tscweb.action.grpms.GrpMsListAction">
+      <forward name="grpmsaddjsp" path="/jsp/grpms/grpmsaddinfo.jsp" />
+      <forward name="grpmsmdifyjsp" path="/jsp/grpms/grpmsmody.jsp" />
+      <forward name="grpmsaddplmsjsp" path="/jsp/grpms/grpmsaddplinfo.jsp" />
+      <forward name="grpmsaddplgrpjsp" path="/jsp/grpms/msgrpaddplinfo.jsp" />
+      <forward name="showgrpmslist" path="/grpms.do?CMD=grpms_search" />
+      <forward name="success" path="/jsp/grpms/grpmslistinfo.jsp" />
+      <forward name="kygrpmsaddplgrpjsp" path="/jsp/grpms/msgrpaddplgrpinfo.jsp" />
+    </action>
+  
+    </action-mappings>
+  <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />
+  
+</struts-config>
+

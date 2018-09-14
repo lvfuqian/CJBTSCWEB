@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/question.do" location="75,330" dimension="286,84" />
+  <StrutsActivity path="/jsp/question/questionlistinfo.jsp" location="90,165" dimension="244,48" />
+  <StrutsActivity path="/jsp/question/questionxx.jsp" location="950,250" dimension="208,48" />
+  <StrutsActivity path="/jsp/question/questionmody.jsp" location="650,350" dimension="220,48" />
+  <StrutsActivity path="/jsp/question/questionaddinfo.jsp" location="435,165" dimension="238,48" />
+  <StrutsActivity path="/dad" location="950,150" dimension="64,48" />
+  <StrutsTransition id="/question.do,succes,/jsp/question/questionlistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="188,330" />
+      <AbsolutePoint location="188,213" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/question.do,showquestionlist,/question.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="218,330" />
+      <AbsolutePoint location="218,258" />
+      <AbsolutePoint location="406,258" />
+      <AbsolutePoint location="406,375" />
+      <AbsolutePoint location="361,375" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/question.do,msmodify,/jsp/question/questionmody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="361,335" />
+      <AbsolutePoint location="760,335" />
+      <AbsolutePoint location="760,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/question.do,addquestionjsp,/jsp/question/questionaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="361,335" />
+      <AbsolutePoint location="554,335" />
+      <AbsolutePoint location="554,213" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/question.do,xingxi,/jsp/question/questionxx.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="248,330" />
+      <AbsolutePoint location="248,288" />
+      <AbsolutePoint location="950,288" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

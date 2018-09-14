@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="AddEpForm" type="com.elegps.tscweb.form.AddEpForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+   <action
+      attribute="AddEpForm"
+      input="/jsp/enterprise/epaddinfo.jsp"
+      name="AddEpForm"
+      path="/ep"
+      scope="request"
+      type="com.elegps.tscweb.action.EnterPrise.EnterPriseListAction">
+      <forward name="epmodifyjsp" path="/jsp/enterprise/epmody.jsp" />
+      <forward name="xiangxi" path="/jsp/enterprise/epxx.jsp" />
+      <forward name="succes" path="/jsp/enterprise/eplistinfo.jsp" />
+      <forward name="kfsucces" path="/jsp/enterprise/kfeplistinfo.jsp" />
+      <forward name="epaddjsp" path="/jsp/enterprise/epaddinfo.jsp" />
+      <forward name="showeplist" path="/ep.do?CMD=ep_search" />
+      <forward name="kfshoweplist" path="/ep.do?CMD=ep_search&amp;type=1" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

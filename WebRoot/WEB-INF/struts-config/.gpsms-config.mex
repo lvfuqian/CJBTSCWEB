@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/gpsms.do" location="135,90" dimension="262,84" />
+  <StrutsActivity path="/jsp/gpsms/gpsmsaddinfo.jsp" location="465,30" dimension="202,48" />
+  <StrutsActivity path="/jsp/gpsms/gpsmslistinfo.jsp" location="180,210" dimension="208,48" />
+  <StrutsActivity path="/jsp/gpsms/gpsmsaddplinfo.jsp" location="540,270" dimension="214,48" />
+  <StrutsTransition id="/gpsms.do,success,/jsp/gpsms/gpsmslistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="266,174" />
+      <AbsolutePoint location="266,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gpsms.do,gpsmsaddjsp,/jsp/gpsms/gpsmsaddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="397,102" />
+      <AbsolutePoint location="566,102" />
+      <AbsolutePoint location="566,78" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gpsms.do,gpsmsaddplmsjsp,/jsp/gpsms/gpsmsaddplinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="397,132" />
+      <AbsolutePoint location="647,132" />
+      <AbsolutePoint location="647,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gpsms.do,showgpsmslist,/gpsms.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="266,132" />
+      <AbsolutePoint location="266,132" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

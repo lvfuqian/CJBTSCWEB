@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/control.do" location="50,450" dimension="334,104" />
+  <StrutsActivity path="/mspladdjsp.do" location="1607,77" dimension="116,70" />
+  <StrutsActivity path="/jsp/control/controllist.jsp" location="650,50" dimension="182,53" />
+  <StrutsActivity path="/jsp/ms/mspladdinfo.jsp" location="1535,284" dimension="174,53" />
+  <StrutsActivity path="/jsp/ms/kfmslistinfo.jsp" location="0,284" dimension="167,53" />
+  <StrutsActivity path="/jsp/ms/msaddinfo.jsp" location="267,284" dimension="163,53" />
+  <StrutsActivity path="/jsp/ms/msmody.jsp" location="530,284" dimension="151,53" />
+  <StrutsActivity path="/jsp/ms/msmodyext.jsp" location="781,284" dimension="168,53" />
+  <StrutsActivity path="/jsp/ms/mslistinfo.jsp" location="1049,284" dimension="156,53" />
+  <StrutsActivity path="/jsp/ms/msxx.jsp" location="1305,284" dimension="130,53" />
+  <StrutsActivity path="/jsp/control/controlupdate.jsp" location="950,450" dimension="207,53" />
+  <StrutsTransition id="/control.do,tonull,/control.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="217,502" />
+      <AbsolutePoint location="217,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mspladdjsp.do,null,/jsp/ms/mspladdinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1665,147" />
+      <AbsolutePoint location="1665,284" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,listok,/jsp/control/controllist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="217,502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,updateok,control.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="384,463" />
+      <AbsolutePoint location="650,463" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,took,/jsp/control/controllist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="217,450" />
+      <AbsolutePoint location="217,76" />
+      <AbsolutePoint location="650,76" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,updateok,/control.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="217,502" />
+      <AbsolutePoint location="217,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,took,/jsp/control/controlupdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="384,552" />
+      <AbsolutePoint location="1053,552" />
+      <AbsolutePoint location="1053,503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/control.do,tonull,control.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="384,493" />
+      <AbsolutePoint location="650,493" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

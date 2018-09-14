@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		<!--<property name="connection.url">jdbc:mysql://47.89.48.61:3306/DDB?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>-->
+		<!--<property name="connection.url">jdbc:mysql://127.0.0.1:3306/DDB?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>-->
+		<!--<property name="connection.url">jdbc:mysql://120.25.166.17:3306/DDBCJB?useUnicode=true&amp;characterEncoding=UTF-8</property>-->
+		<property name="connection.url">jdbc:mysql://120.79.196.148:3306/CJBDDB?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<mapping resource="hbm/TabSysconfig.hbm.xml" />
+		<mapping resource="hbm/TabSysuserrole.hbm.xml" />
+		<mapping resource="hbm/TabSysusersinfo.hbm.xml" />
+		<mapping resource="hbm/TabSysserverdbinfo.hbm.xml" />
+		<mapping resource="hbm/TabSysfuncinfo.hbm.xml" />
+		<mapping resource="hbm/TabSysrolefunc.hbm.xml" />
+		<mapping resource="hbm/TabSysroleinfo.hbm.xml" />
+		<mapping resource="hbm/TabBaseGrpextinfo.hbm.xml" />
+		<!-- 
+		<mapping resource="hbm/TabPhoneUser.hbm.xml" />
+		 -->
+	</session-factory>
+
+</hibernate-configuration>

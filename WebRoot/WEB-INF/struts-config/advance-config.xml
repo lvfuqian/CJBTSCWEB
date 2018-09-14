@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+
+  </form-beans>
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      input="/jsp/orgadvance/orgadvanceaddinfo.jsp"
+      path="/advance"
+      scope="request"
+      type="com.elegps.tscweb.action.orgadvance.OrgAdvanceListAction">
+      <forward name="modiadvancejsp" path="/jsp/orgadvance/advancemody.jsp" />
+      <forward name="showadvancelist" path="/advance.do?CMD=advance_search" />
+      <forward name="xiangxi" path="/jsp/orgadvance/advancexx.jsp" />
+      <forward name="succes" path="/jsp/orgadvance/advancelistinfo.jsp" />
+      <forward name="validatejsp" path="/jsp/orgadvance/validate.jsp" />
+      <forward name="addadvancejsp" path="/jsp/orgadvance/advanceaddinfo.jsp" />
+      <forward name="chargesucces" path="/jsp/orgadvance/chargelistinfo.jsp" />
+      <forward name="valisucces" path="/jsp/orgadvance/validatelistinfo.jsp" />
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

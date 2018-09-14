@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action path="/ddmsms" type="com.elegps.tscweb.action.ddms.DdmsMsListAction">
+      <forward name="ddmsmsaddjsp" path="/jsp/ddmsms/ddmsmsaddinfo.jsp" />
+      <forward name="success" path="/jsp/ddmsms/ddmsmslistinfo.jsp" />
+      <forward name="showddmssmslist" path="/ddmsms.do?CMD=ddmsms_search" />
+      <forward name="ddmsaddpljsp" path="/jsp/ddmsms/ddmsaddplinfo.jsp"></forward><!--调度管理批量添加 -->
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

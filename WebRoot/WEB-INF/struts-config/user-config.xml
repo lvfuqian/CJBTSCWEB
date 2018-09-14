@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  	<form-bean name="AdduserForm" type="com.elegps.tscweb.form.AdduserForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards >
+    
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="AdduserForm"
+      input="/jsp/user/useraddinfo.jsp"
+      name="AdduserForm"
+      path="/user"
+      scope="request"
+      type="com.elegps.tscweb.action.user.UserListAction">
+      <forward name="succes" path="/jsp/user/userlistinfo.jsp" />
+      <forward name="showuserlist" path="/user.do?CMD=user_search" />
+      <forward name="useraddjsp" path="/jsp/user/useraddinfo.jsp" />
+      <forward name="usermdify" path="/jsp/user/usermody.jsp" />
+      <forward name="mdify" path="/jsp/user/modify.jsp" />
+      <forward name="tologlist" path="/jsp/user/loglistinfo.jsp"/>
+    </action>
+    </action-mappings>
+   <controller processorClass="com.elegps.tscweb.comm.Charset"/>
+  <message-resources parameter="com.elegps.tscweb.struts.ApplicationResources" />   
+</struts-config>
+

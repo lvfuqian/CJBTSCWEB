@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/xml.do" location="50,350" dimension="301,104" />
+  <StrutsActivity path="/jsp/xml/listxml.jsp" location="350,50" dimension="140,53" />
+  <StrutsActivity path="/jsp/user/loglistinfo.jsp" location="0,234" dimension="166,53" />
+  <StrutsActivity path="/jsp/user/modify.jsp" location="266,234" dimension="149,53" />
+  <StrutsActivity path="/jsp/user/useraddinfo.jsp" location="515,234" dimension="179,53" />
+  <StrutsActivity path="/jsp/user/usermody.jsp" location="794,234" dimension="167,53" />
+  <StrutsActivity path="/jsp/user/userlistinfo.jsp" location="1061,234" dimension="172,53" />
+  <StrutsActivity path="/jsp/user/listxml.jsp" location="650,350" dimension="145,53" />
+  <StrutsActivity path="/jsp/xml/update.jsp" location="950,350" dimension="145,53" />
+  <StrutsTransition id="/xml.do,took,/jsp/xml/update.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="351,448" />
+      <AbsolutePoint location="1022,448" />
+      <AbsolutePoint location="1022,403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,addok,/xml.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="200,454" />
+      <AbsolutePoint location="200,506" />
+      <AbsolutePoint location="-2,506" />
+      <AbsolutePoint location="-2,402" />
+      <AbsolutePoint location="50,402" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,tologlist,/jsp/user/loglistinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="83,350" />
+      <AbsolutePoint location="83,287" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,usermdify,/jsp/user/usermody.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="351,418" />
+      <AbsolutePoint location="877,418" />
+      <AbsolutePoint location="877,287" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,mdify,/jsp/user/modify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="336,350" />
+      <AbsolutePoint location="336,287" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,null,/xml.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="200,402" />
+      <AbsolutePoint location="200,402" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/user/useraddinfo.jsp,null,/xml.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="634,287" />
+      <AbsolutePoint location="634,388" />
+      <AbsolutePoint location="351,388" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,useraddjsp,/jsp/user/useraddinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="351,358" />
+      <AbsolutePoint location="604,358" />
+      <AbsolutePoint location="604,287" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xml.do,listok,/jsp/xml/listxml.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="200,402" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!--<property name="connection.url">jdbc:mysql://47.89.48.61:3306/adb?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<!--<property name="connection.url">jdbc:mysql://127.0.0.1:3306/adb?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<!--<property name="connection.url">jdbc:mysql://120.25.166.17:3306/adbCJB?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>-->
+		<property name="connection.url">jdbc:mysql://120.79.196.148:3306/CJBADB?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</property>
+		<!--127.0.0.1:3306/tsc wanglei////120.25.125.217:3306/TSC  poctalkPoctalk@020
+		|||||203.88.213.159:3306/TSCTEST  bk159@GZ   118.244.236.92:4000/TSC  bj@010<property name="connection.url">jdbc:mysql://203.88.213.159:3306/TSC?useUnicode=true&amp;characterEncoding=UTF-8</property>-->
+		<!-- <property name="connection.username">root</property>
+		<property name="connection.password">bj@010</property> -->
+		<!--<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>-->
+		<property name="connection.username">poctalk</property>
+		<property name="connection.password">Poctalk@020</property>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		<!-- <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+		<property name="dialect">com.elegps.tscweb.comm.MySQLDialect</property>
+	</session-factory>
+
+</hibernate-configuration>
